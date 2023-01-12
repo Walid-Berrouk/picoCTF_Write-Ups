@@ -1,0 +1,18 @@
+from the title of the challenge, we can conclude that the command `grep` will be used to search for the flag in the provided file `file`
+
+
+when looking for file type, we can see that it is a text file :
+
+```zsh
+└─$ file file   
+file: ASCII text, with very long lines (4200)
+```
+
+so, to search for the flag, we will search for the obvious part of it which is `picoCTF{`, the flag will be diplayed after it :
+
+`grep 'picoCTF{' file `
+
+flag : picoCTF{grep_is_good_to_find_things_f77e0797}
+
+More information :
+https://ryanstutorials.net/linuxtutorial/grep.php

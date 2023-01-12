@@ -1,0 +1,20 @@
+Seeing the table, it is obviously the Vigenére Cipher (Check this out : https://www.includehelp.com/cryptography/cryptographic-techniques-vigen%C3%A9re-cipher-playfair-cipher-hill-cipher.aspx)
+
+Using the table given, we will have :
+
+cipher :  UFJKXQZQUNB
+key :     SOLVECRYPTO
+---------------------
+message : MTUFBSQOJGP
+
+This when crypt the message (you look for correspandance row-column)
+
+but to decrypt, you need to look correspendance row-value, the message will be the column alphat, doing that we get : 
+
+message : CRYPTOISFUN
+
+Using this website : https://www.dcode.fr/chiffre-vigenere , wealso get :
+
+message : CRYPTOISFUN
+
+flag : picoCTF{CRYPTOISFUN}

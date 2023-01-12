@@ -1,0 +1,12 @@
+netcat : netcat is a computer networking utility for reading from and writing to network connections using TCP or UDP. The command is designed to be a dependable back-end that can be used directly or easily driven by other programs and scripts.
+
+to open connextion using netcat : 
+`nc YOUR_ULR YOUR_PORT`
+
+So, to open the connexion for the website given we do :
+`nc jupiter.challenges.picoctf.org 25103`
+
+it will give us diractly the flag : picoCTF{nEtCat_Mast3ry_d0c64587}
+
+More Information :
+https://linux.die.net/man/1/nc

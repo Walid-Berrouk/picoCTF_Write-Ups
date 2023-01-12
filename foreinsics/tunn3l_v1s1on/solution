@@ -1,0 +1,12 @@
+See where to find width and height of the image : https://fr.wikipedia.org/wiki/Windows_bitmap
+
+Original Size (second line, offset of 2 octets) :
+
+width : 6e04
+height : 3201
+
+change height of it (since it is a large image) (add +2) : 3201 => 3203
+
+dont forget to convert to visible format like png or jpg, use this command : $ mogrify -format jpg tunn3l_v1s10n.bmp
+
+you should find the flag in tunn3l_v1s10n.jpg

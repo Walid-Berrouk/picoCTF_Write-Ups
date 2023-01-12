@@ -1,0 +1,15 @@
+the key to this challenge is knowing that for a specific key, no matter how much encrypt (Xor you make), it stays the same (See Test 1)
+
+So first, we will apply a decryption using all random strs
+
+Brute force to get the key
+The idea is that throughout the randint, there are a chance that the xors applied are either odd or even, so xor applied or not. So try all possibilities
+Check : https://www.ctfwriteup.com/picoctf/picomini-by-redpwn/cryptography
+
+Instead of using random like in the write up, we generate possibilities using genBinary, then appliing xor on whenever value == 1
+
+Then the final one will be with some lain text (picoCTF{) to get real key that the flag has been encrypted with it
+
+Note : 
+ - the decryption is the encryption itself (See Test 2), we can use also xor method from pwn (Check import)
+ - Since 'ever' string is repeated, we can apply it only once, the same result will be repeated

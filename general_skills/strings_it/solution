@@ -1,0 +1,28 @@
+With the given file `strings`, we need to check the type of it :
+
+```
+┌──(rivench㉿kali)-[~/Documents/picoCTF/strings_it]
+└─$ file strings 
+strings: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=94ec6b5e9cef175e834e0f7fcaedeaa167603c90, not stripped
+```
+
+It seems like an executable file, but the description says not to run it (running it doesn't work anyway), but search for the flag without running it.
+
+what checking the file using `cat strings`, you can find some text strings that are readable, so we might thing that the flag is hidden inside the file.
+
+To search for it, we will search for the string 'picoCTF{' and see if it is available, we can use :
+
+`grep 'picoCTF{' --text strings`
+
+(--text since the file is binary and we want him to consider the binary as text)
+
+the string part of the flag will be highlighted is red in output (search for it since the file is all concatinated together).
+
+Flag : picoCTF{5tRIng5_1T_d66c7bb7}
+
+Mire Information :
+https://linux.die.net/man/1/strings
+
+(You can use the command `strings` which prints the printable character sequences that are at least 4 characters long to view the flag :
+    `strings strings | grep 'picoCTF{'`
+)

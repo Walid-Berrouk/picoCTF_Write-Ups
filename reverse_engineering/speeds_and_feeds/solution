@@ -1,0 +1,12 @@
+using the hint, the language of CNC machines is G-Code
+
+when targetting `nc mercury.picoctf.net 59953`, it prints out some G-Code instructions (See G-Code Samples in the net)
+
+use the following command to put it in a file : 
+
+`nc mercury.picoctf.net 59953 > output.txt`
+
+After that, search for an online decoder : use : https://ncviewer.com/
+
+    - copy output in the input section
+    - plot, you will be displayed the flag
